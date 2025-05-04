@@ -5,3 +5,34 @@
 :root {
   --bs-body-bg: var(--bs-gray-100);
 }
+
+#hero {
+  background:
+      /* top, transparent black, faked with gradient */ 
+      linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+      /* bottom, image */
+      url('images/hemp-background.jpg');  height: 70vh;
+      background-position: center left;
+      background-size: cover;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+.title-font {
+  font-family: Raleway;
+}
+
+.text-font {
+  font-family: OpenSans;
+}
